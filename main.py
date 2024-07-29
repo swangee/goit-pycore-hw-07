@@ -36,17 +36,6 @@ def main():
 
     book = AddressBook()
 
-    r1 = Record("test1")
-    book.add_record(r1)
-
-    r2 = Record("test2")
-    r2.add_birthday(Birthday("30.07.1992"))
-    book.add_record(r2)
-
-    r3 = Record("test3")
-    r3.add_birthday(Birthday("30.09.1992"))
-    book.add_record(r3)
-
     while True:
         user_input = input("Enter a command: ")
         command, *args = parse_input(user_input)
